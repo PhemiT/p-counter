@@ -13,19 +13,21 @@ welcome.innerText += ":-)"
 // increment function 
 function increment() {
     count += 1
-    countEl.innerText = count
+    countEl.textContent = count
     return(count)
 }
 
 // reset fuction
 function reset() {
     count = 0
-    countEl.innerText = count
+    countEl.textContent = count
     return(count)
 }
 
 // save function 
 function save() {
     var countStr = count + " - "
-    saveEl.innerText += countStr
+    saveEl.textContent += countStr
+    countEl.textContent = 0
+    count = 0
 }
