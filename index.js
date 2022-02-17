@@ -1,8 +1,16 @@
+// declaring variables 
+var countEl = document.getElementById("count-el")
 var count = 0
 
 // increment function 
 function increment() {
-    var incrementCount = count + 1
-    return(incrementCount)
+    count = count + 1
+    countEl.innerText = count
+    return(count)
 }
-increment()
+
+function reset() {
+    count = 0
+    countEl.innerText = count
+    return(count)
+}
